@@ -1,0 +1,82 @@
+:root {
+  --body: #000;
+  --accent: #06b75f;
+  --text: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron";
+  color: var(--text);
+  background-color: var(--body);
+  margin: 30px;
+}
+main{
+  margin: 10px;
+  padding: 10px;
+}
+
+.content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(C:\Youcode\brief2\assets\img\turchelon.png);
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 255, 127, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    /* width: 1fr; */
+}
+.choix {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    gap: 40px;
+
+}
+.choix img{
+    width: 70px;
+    height: 70px;
+}
+.left .image1{
+    width: 200px;
+    height: 250px;
+}
+
+.right{
+    width: 500px;
+}
+
+
+.choose-btn{
+  margin-top: 1.5rem;
+  background-color: var(--accent);
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.choose-btn:hover {
+    transform: translateY(-0.5px);
+    background-color: #00cc66;
+}
+.highlight{
+    background-color: var(--accent);
+    padding: 1px;
+    border-radius: 2px;
+}
+.code{
+    color: var(--accent);
+}
+
+
+

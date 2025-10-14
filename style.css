@@ -34,7 +34,6 @@ html {
 }
 
 body {
-    font-family: Orbitron;
     background-color: var(--body);
     overflow-x: hidden;
     overflow-y: hidden;
