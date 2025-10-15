@@ -25,7 +25,6 @@ html, body {
 }
 .titre{
     background-color: var(--accent);
-    border-radius: 5px;
 }
 
 /* main*/
@@ -120,9 +119,7 @@ main{
   gap: 30px;
 }
 .label{
-    /* border: solid 1px var(--accent); */
     width: 70px;
-    /* clip-path: polygon(0 0, 80% 0, 100% 100%, 100% 100%, 0% 100% ) */
 }
 
 .label::before {
@@ -137,7 +134,8 @@ main{
 .label::after{
     content: "";
     background: #235cf9;
-     clip-path: polygon(10% 0, 30% 0, 10% 0%, 90% 100%, 0 100%, 0 0%);
+    border-radius: 0 80% 0 0  ;
+    corner-shape: bevel;
     width: 20px;
     height: 20px;
     position: absolute;

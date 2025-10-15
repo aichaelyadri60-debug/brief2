@@ -1,0 +1,108 @@
+:root{
+  --body : #000;
+  --accent: #fcf405;
+  --text: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: var(--body);
+    color: var(--text);
+    padding: 30px;
+}
+html, body {
+  overflow-x: hidden; 
+}
+main{
+  margin: 10px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center; 
+  gap: 2rem;
+  background-image: url("assets/img/Vector 47.svg");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center;
+  padding: 2rem;
+  height: 600px; 
+}
+.code{
+    color: var(--accent);
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+
+}
+.option >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    background-color: #000;
+}
+.div1{
+    flex-grow: 1;
+     flex-wrap: wrap;
+}
+.div2{
+    flex-grow: 1;
+     flex-wrap: wrap;
+}
+
+.div3{
+    flex-grow: 1;
+     flex-wrap: wrap;
+}
+
+.div4{
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* loading */
+.loading-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 170px;
+  top: 30px;
+  gap: 1rem;
+}
+ .bar {
+  width: 500px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+.progress {
+  height: 100%;
+  background-color: var(--accent);
+}
+.percent {
+  font-weight: bold;
+  color: var(--accent);
+}
+.loading-bar >p{
+  font-size: x-large;
+}

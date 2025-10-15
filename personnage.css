@@ -136,7 +136,8 @@ main{
 .label::after{
     content: "";
     background: var(--accent);
-     clip-path: polygon(10% 0, 30% 0, 10% 0%, 90% 100%, 0 100%, 0 0%);
+    border-radius: 0 80% 0 0  ;
+    corner-shape: bevel;
     width: 20px;
     height: 20px;
     position: absolute;
