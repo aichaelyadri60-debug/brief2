@@ -1,7 +1,7 @@
-:root {
-  --body: #000;
-  --accent: #06b75f;
-  --text: #fff;
+:root{
+    --body: #07040F;
+    --accent: #235cf9;
+    --text: #fff;
 }
 
 * {
@@ -10,27 +10,23 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  font-family: "Orbitron";
-  color: var(--text);
-  background-color: var(--body);
-  padding: 30px;
-  
-}
-html, body {
-  overflow-x: hidden; 
-}
 
-/* Header*/
 .code{
     color: var(--accent);
 }
-.titre{
-    background-color: var(--accent);
-    border-radius: 2px;
+body{
+    background-color: var(--body);
+    color: var(--text);
+    padding: 30px;
 }
 
+html, body {
+  overflow-x: hidden; 
+}
+.titre{
+    background-color: var(--accent);
+    border-radius: 5px;
+}
 
 /* main*/
 main{
@@ -51,7 +47,6 @@ main{
   height: 600px; 
 }
 
-
 .choix {
     display: flex;
     text-align: flex-start;
@@ -59,19 +54,22 @@ main{
     gap: 40px;
 
 }
+
 .choix3{
   border: solid 1px var(--accent);
   padding: 5px;
 
 }
+
 .choix img{
     width: 70px;
     height: 70px;
 }
+
 .choix img:hover {
   border-color: var(--accent);
 }
-.left .image1{
+.image1{
     width: 200px;
     height: 250px;
     align-self: center;
@@ -100,9 +98,6 @@ main{
   flex-direction: column;
   gap: 50px;
 }
-
-
-
 .choose-btn{
   margin-top: 1.5rem;
   background-color: var(--accent);
@@ -116,26 +111,32 @@ main{
 }
 .choose-btn:hover {
     transform: translateY(-0.5px);
-    background-color: #00cc66;
+    background-color: blue;
 }
-
-
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
 .label{
+    /* border: solid 1px var(--accent); */
     width: 70px;
+    /* clip-path: polygon(0 0, 80% 0, 100% 100%, 100% 100%, 0% 100% ) */
 }
 
 .label::before {
     content: "";
-    background: var(--accent);
+    background: #235cf9;
     display: block;
-    width: 64px;
+    width: 60px;
     height: 20px;
     position: absolute;
     z-index: -2;
 }
 .label::after{
     content: "";
-    background: var(--accent);
+    background: #235cf9;
      clip-path: polygon(10% 0, 30% 0, 10% 0%, 90% 100%, 0 100%, 0 0%);
     width: 20px;
     height: 20px;
@@ -145,13 +146,6 @@ main{
 
 
 
-
-.image{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
 
 /* loading */
 .loading-bar {

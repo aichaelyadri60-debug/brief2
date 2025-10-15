@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="personnage.css">
-  <title>Profil – Choix du personnage</title>
-</head>
-<body>
-  <header>
-    <p class="code">0028</p>
-    <h1>CHOOSE YOUR PROFILE</h1>
-    <h3>CHOOSE YOUR <span class="highlight">FREE COMPANION</span></h3>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="personnage.css" />
+    <title>Profil – Choix du personnage</title>
+  </head>
+  <body>
+    <header>
+      <p class="code">0028</p>
+      <h1>CHOOSE YOUR PROFILE</h1>
+      <h3>CHOOSE YOUR <span class="titre">FREE COMPANION</span></h3>
+    </header>
 
-  <main>
-    <div class="container">
+    <main>
+      <div class="loading-bar">
+        <p class="loading-text">LOADING</p>
+        <div class="bar">
+          <div class="progress" style="width: 40%"></div>
+        </div>
+        <p class="percent">40%</p>
+      </div>
+
       <div class="content">
         <div class="left">
-          <img src="assets/img/turchelon.png" alt="Turchelon" class="image1">
-          <svg>
-              <line x1="100" y1="100" x2="120" y2="150" stroke="#00f0ff" stroke-width="2" opacity="0.7"/>
-              <line x1="80" y1="150" x2="120" y2="150" stroke="#00f0ff" stroke-width="2" opacity="0.7"/>
-              <line x1="80" y1="150" x2="120" y2="150" stroke="#00f0ff" stroke-width="2" opacity="0.7"/>
-              <line x1="80" y1="150" x2="120" y2="150" stroke="#00f0ff" stroke-width="2" opacity="0.7"/>
-            </svg>
-            <div class="choix">
-            <img src="assets/img/turchelon.png" alt="choix1"/>
-            <img src="assets/img/turchelon.png" alt="choix2"/>
-            <img src="assets/img/turchelon.png" alt="choix3"/>
+          <div class="image">
+            <div class="arrow-box"><span class="arrow">&lt;</span></div>
+
+            <img
+              src="assets/img/turchelon.png"
+              alt="Turchelon"
+              class="image1"
+            />
+
+            <div class="arrow-box"><span class="arrow">&gt;</span></div>
           </div>
+
+          <div class="choix">
+            <img src="assets/img/turchelon.png" alt="choix1" class="choix1" />
+            <img src="assets/img/turchelon.png" alt="choix2" class="choix2"/>
+            <img src="assets/img/turchelon.png" alt="choix3" class="choix3"/>
+          </div>
+        
         </div>
 
         <div class="right">
           <p class="version">V01</p>
           <p class="label">Character</p>
           <h1 class="name">TURTLE</h1>
-          <img src="assets/img/ETHOS UNTAMED.png" alt="Logo" class="logo">
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Voluptates animi quisquam optio. Perferendis eum
-             totam assumenda non quia, voluptate iure?
+          <img src="assets/img/ETHOS UNTAMED.png" alt="Logo" class="logo" />
+          <p class="description" style="width: 400px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            animi quisquam optio. Perferendis eum totam assumenda non quia,
+            voluptate iure?
           </p>
-          <button class="choose-btn">CHOOSE THE TURTLE</button>
+          <button class="choose-btn"><a href="fusil.html" style="color: black; ">THE TURTLE</a> </button>
         </div>
       </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
+
