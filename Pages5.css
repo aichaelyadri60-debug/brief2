@@ -1,0 +1,110 @@
+:root {
+  --body: #07040f;
+  --accent: #0bbbeb;
+  --text: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body);
+  color: var(--text);
+  padding: 30px;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+main {
+  margin: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: url("assets/img/Vector 47.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 2rem;
+  height: 600px;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+header {
+  text-align: center;
+}
+header > h1 > span {
+  color: var(--accent);
+}
+
+.div > .img1 {
+  width: 200px;
+  height: 250px;
+  position: relative;
+  top: -80px;
+}
+
+.div > .img3 {
+  width: 200px;
+  height: 250px;
+  position: relative;
+  bottom: -120px;
+}
+.div > .img2 {
+  height: 400px;
+}
+
+.confirm-btn {
+  width: 200px;
+  height: 30px;
+  background-color: #110338;
+  border: var(--accent) solid 1px;
+  color: var(--text);
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px var(--accent);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.confirm-btn:hover {
+  transform: translateY(-0.5px);
+  background-color: #1a506e;
+}
+
+/* loading */
+.loading-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 170px;
+  top: 30px;
+  gap: 1rem;
+}
+.bar {
+  width: 500px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+.progress {
+  height: 100%;
+  background-color: var(--accent);
+}
+.percent {
+  font-weight: bold;
+  color: var(--accent);
+}
+.loading-bar > p {
+  font-size: x-large;
+}

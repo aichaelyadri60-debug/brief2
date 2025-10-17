@@ -1,7 +1,7 @@
-:root{
-    --body: #07040F;
-    --accent: #235cf9;
-    --text: #fff;
+:root {
+  --body: #07040f;
+  --accent: #235cf9;
+  --text: #fff;
 }
 
 * {
@@ -10,70 +10,67 @@
   box-sizing: border-box;
 }
 
+.code {
+  color: var(--accent);
+}
+body {
+  background-color: var(--body);
+  color: var(--text);
+  padding: 30px;
+}
 
-.code{
-    color: var(--accent);
+html,
+body {
+  overflow-x: hidden;
 }
-body{
-    background-color: var(--body);
-    color: var(--text);
-    padding: 30px;
-}
-
-html, body {
-  overflow-x: hidden; 
-}
-.titre{
-    background-color: var(--accent);
+.titre {
+  background-color: var(--accent);
 }
 
 /* main*/
-main{
+main {
   margin: 10px;
 }
-
 
 .content {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 2rem;
   background-image: url("assets/img/Vector 47.svg");
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
   background-position: center;
   padding: 2rem;
-  height: 600px; 
+  height: 600px;
 }
 
 .choix {
-    display: flex;
-    text-align: flex-start;
-    padding: 10px;
-    gap: 40px;
-
+  display: flex;
+  text-align: flex-start;
+  padding: 10px;
+  gap: 40px;
 }
 
-.choix3{
+.choix3 {
   border: solid 1px var(--accent);
   padding: 5px;
-
 }
 
-.choix img{
-    width: 70px;
-    height: 70px;
+.choix img {
+  width: 70px;
+  height: 70px;
 }
 
 .choix img:hover {
   border-color: var(--accent);
 }
-.image1{
-    width: 200px;
-    height: 250px;
-    align-self: center;
+.image1 {
+  width: 200px;
+  height: 250px;
+  align-self: center;
 }
-.arrow-box{
+.arrow-box {
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 50px;
   height: 50px;
@@ -82,22 +79,21 @@ main{
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
-
 }
 .arrow-box:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: var(--accent);
 }
-.right{
-    flex-grow: 1;
+.right {
+  flex-grow: 1;
 }
-.left{
+.left {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.choose-btn{
+.choose-btn {
   margin-top: 1.5rem;
   background-color: var(--accent);
   color: #000;
@@ -109,41 +105,38 @@ main{
   transition: 0.3s;
 }
 .choose-btn:hover {
-    transform: translateY(-0.5px);
-    background-color: blue;
+  transform: translateY(-0.5px);
+  background-color: blue;
 }
-.image{
+.image {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-.label{
-    width: 70px;
+.label {
+  width: 70px;
 }
 
 .label::before {
-    content: "";
-    background: #235cf9;
-    display: block;
-    width: 60px;
-    height: 20px;
-    position: absolute;
-    z-index: -2;
+  content: "";
+  background: #235cf9;
+  display: block;
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  z-index: -2;
 }
-.label::after{
-    content: "";
-    background: #235cf9;
-    border-radius: 0 80% 0 0  ;
-    corner-shape: bevel;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    z-index: -2;
+.label::after {
+  content: "";
+  background: #235cf9;
+  border-radius: 0 80% 0 0;
+  corner-shape: bevel;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: -2;
 }
-
-
-
 
 /* loading */
 .loading-bar {
@@ -154,7 +147,7 @@ main{
   top: 30px;
   gap: 1rem;
 }
- .bar {
+.bar {
   width: 500px;
   height: 6px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -168,6 +161,6 @@ main{
   font-weight: bold;
   color: var(--accent);
 }
-.loading-bar >p{
+.loading-bar > p {
   font-size: x-large;
 }
