@@ -51,6 +51,7 @@ main {
   color: var(--text);
 }
 .option > div {
+  position: relative;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -64,7 +65,53 @@ main {
 }
 
 
+.line {
+  position: absolute;
+  width: 10px;       
+  height: 10px;
+  border: 1px solid var(--text); 
+}
 
+/* coin en haut à gauche */
+.line1 {
+  top: 4px;
+  left: 5px;
+  border-right: none;
+  border-bottom: none;
+}
+
+/* coin en haut à droite */
+.line2 {
+  top: 4px;
+  right: 5px;
+  border-left: none;
+  border-bottom: none;
+}
+
+/* coin en bas à gauche */
+.line3 {
+  bottom: 4px;
+  left: 5px;
+  border-right: none;
+  border-top: none;
+}
+
+/* coin en bas à droite */
+.line4 {
+  bottom: 3px;
+  right: 5px;
+  border-left: none;
+  border-top: none;
+}
+
+.border{
+  position: absolute;
+  border: 0.1px solid white;
+  width: 180px;
+  height: 260px;
+  opacity: 40%;
+
+}
 
 .partage {
   display: flex;
@@ -87,16 +134,7 @@ main {
   width: 150px;
 }
 
-.div1::before{
-content: " ";
- background: var(--accent);
-  /* display: block; */
-   border-radius: 100% 100% 100% 100%;
-  corner-shape: bevel;
-  width: 64px;
-  height: 20px;
-  position: absolute;
-}
+
 
 /* loading */
 .loading-bar {
