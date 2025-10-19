@@ -66,22 +66,47 @@ header > h1 > span {
   height: 400px;
 }
 
-.confirm-btn {
-  width: 200px;
-  height: 30px;
-  background-color: #110338;
-  border: var(--accent) solid 1px;
-  color: var(--text);
-  border-radius: 3px;
-  box-shadow: 1px 1px 1px 1px var(--accent);
-  cursor: pointer;
-  transition: 0.3s;
+.img1, .img2, .img3 {
+  transition: transform 0.5s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 8px rgba(11, 187, 235, 0.3));
 }
-.confirm-btn:hover {
-  transform: translateY(-0.5px);
-  background-color: #1a506e;
+.img1:hover, .img2:hover, .img3:hover {
+  transform: translateY(-10px) scale(1.05);
+  filter: drop-shadow(0 0 15px var(--accent));
+}
+.confirm-btn {
+  position: relative;
+  padding: 0.8rem 2.5rem;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
+.confirm-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  transition: 0.6s;
+}
+
+.confirm-btn:hover::before {
+  left: 100%;
+}
+
+.confirm-btn:hover {
+  background-color: rgba(11, 187, 235, 0.1);
+  box-shadow: 0 0 15px var(--accent);
+  transform: translateY(-3px);
+}
 /* loading */
 .loading-bar {
   display: flex;
@@ -99,8 +124,9 @@ header > h1 > span {
 }
 .progress {
   height: 100%;
-  background-color: var(--accent);
+  background: linear-gradient(90deg, var(--accent), #00fff2);
 }
+
 .percent {
   font-weight: bold;
   color: var(--accent);
