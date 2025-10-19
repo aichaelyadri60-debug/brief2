@@ -55,6 +55,37 @@ main {
   padding: 10px;
   gap: 40px;
 }
+
+
+.line {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background: var(--text);
+}
+
+
+.line1 {
+  width: 35px;
+  left: 155px;
+}
+.line2 {
+  width: 35px;
+  left: 265px;
+}
+.line3 {
+  width: 35px;
+  left: 375px;
+}
+.line4 {
+  width: 0.5px;
+  left: 410px;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  background: var(--text);
+}
+
 .choix3 {
   border: solid 1px var(--accent);
   padding: 5px;
@@ -66,10 +97,18 @@ main {
 .choix img:hover {
   border-color: var(--accent);
 }
-.left .image1 {
-  width: 200px;
+
+.image1 {
+  width: 220px;
   height: 250px;
   align-self: center;
+  animation: img1 5s linear ;
+}
+
+@keyframes img1 {
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 .arrow-box {
   border: 1px solid rgba(255, 255, 255, 0.3);

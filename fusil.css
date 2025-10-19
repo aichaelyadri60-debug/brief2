@@ -52,6 +52,39 @@ main {
   gap: 40px;
 }
 
+
+
+.line {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background: var(--text);
+}
+
+
+.line1 {
+  width: 35px;
+  left: 155px;
+}
+.line2 {
+  width: 35px;
+  left: 265px;
+}
+.line3 {
+  width: 35px;
+  left: 375px;
+}
+.line4 {
+  width: 0.5px;
+  left: 410px;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  background: var(--text);
+}
+
+
+
 .choix3 {
   border: solid 1px var(--accent);
   padding: 5px;
@@ -66,9 +99,21 @@ main {
   border-color: var(--accent);
 }
 .image1 {
-  width: 200px;
+  width: 250px;
   height: 250px;
   align-self: center;
+  border: var(--text) solid 1px;
+  animation: image1 2s linear;
+}
+@keyframes image1 {
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }from{
+    opacity: 0;
+     transform: translateX(-60px);
+    
+  }
 }
 .arrow-box {
   border: 1px solid rgba(255, 255, 255, 0.3);
